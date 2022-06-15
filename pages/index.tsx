@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Layout from '../components/layout';
-import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +13,7 @@ const Home: NextPage = () => {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <h1>메인 화면</h1>
+      <h1 className='text-3xl font-bold underline'>메인 화면</h1>
     </Layout>
   );
 };
