@@ -1,10 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Layout from '../components/layout';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <Layout>
       <Head>
         <title>프론트엔드 개발자 - 이주환 포트폴리오</title>
         <meta
@@ -14,7 +15,7 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <h1>메인 화면</h1>
-    </div>
+    </Layout>
   );
 };
 
