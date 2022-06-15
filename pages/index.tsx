@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 
 const Home: NextPage = () => {
   return (
-    <Layout>
+    <>
       <Head>
         <title>프론트엔드 개발자 - 이주환 포트폴리오</title>
         <meta
@@ -14,12 +14,14 @@ const Home: NextPage = () => {
         />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <section className='flex min-h-screen flex-col items-center justify-center text-gray-600 body-font'>
-        <div className='container mx-auto flex px-5 py-24 md:flex-row flex-col items-center'>
-          <Hero />
-        </div>
-      </section>
-    </Layout>
+      <Layout>
+        <section className='flex min-h-[90vh] flex-col items-center justify-center text-gray-600 body-font'>
+          <div className='container mx-auto flex px-5 py-24 md:flex-row flex-col items-center'>
+            <Hero />
+          </div>
+        </section>
+      </Layout>
+    </>
   );
 };
 
