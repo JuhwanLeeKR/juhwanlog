@@ -19,6 +19,9 @@ export default function Header() {
             <Link href={'/'}>
               <a className='mr-5 hover:text-gray-900'>HOME</a>
             </Link>
+            <Link href={'/about'}>
+              <a className='mr-5 hover:text-gray-900'>About Me</a>
+            </Link>
             <Link href={'/skills'}>
               <a className='mr-5 hover:text-gray-900'>Skills</a>
             </Link>
