@@ -21,6 +21,14 @@ export default function Projects({ projects }: any) {
           <span className='pl-4 text-blue-500'>{projects.results.length}</span>
           개의 프로젝트가 있습니다.
         </h1>
+        <a
+          href='https://sparkling-glasses-136.notion.site/190c0acd409449f9ac6ae9ce64ccad32?v=5b44c33605a248c6985ade6cd8176cfd'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='mt-4 text-xl'
+        >
+          🔗노션 페이지 바로가기
+        </a>
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 gap-6'>
           {projects.results.map((aProject: any) => (

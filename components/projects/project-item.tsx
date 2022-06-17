@@ -33,16 +33,19 @@ export default function ProjectItem({ data }: any) {
 
   return (
     <div className='project-card'>
-      <Image
-        className='rounded-t-xl'
-        src={imgSrc}
-        width='100%'
-        height='60%'
-        layout='responsive'
-        objectFit='cover'
-        quality={100}
-        alt={title}
-      />
+      <div>
+        <Image
+          className='rounded-t-xl'
+          src={imgSrc}
+          width='100%'
+          height='60%'
+          layout='responsive'
+          objectFit='cover'
+          quality={100}
+          alt={title}
+          priority={true}
+        />
+      </div>
       <div className='p-4 flex flex-col w-full'>
         <h1 className='text-2xl font-bold'>{title}</h1>
         <h3 className='mt-2 text-xl'>{summary}</h3>
@@ -54,15 +57,15 @@ export default function ProjectItem({ data }: any) {
         <a href={youtubeLink} rel='noopener noreferrer' target='_blank'>
           시연영상 보러가기
         </a>
-        <h3 className='my-1 text-xl'>
+        <h3 className='mt-2 text-lg'>
           작업기간 : {startDateString} ~ {endDateString} (
           {calculatedPeriod(startDateString, endDateString)}일)
         </h3>
 
-        <div className='flex items-start mt-2'>
+        <div className='flex flex-wrap items-start mt-2'>
           {techStacks.map((aTag: any) => (
             <h1
-              className='px-2 py-1 mr-2 rounded-md bg-sky-200 dark:bg-sky-700 w-30'
+              className='px-2 py-1 mr-2 mt-2 rounded-md bg-sky-200 dark:bg-sky-800 w-30'
               key={aTag.id}
             >
               {aTag.name}
