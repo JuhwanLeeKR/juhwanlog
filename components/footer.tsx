@@ -12,7 +12,7 @@ export default function Footer() {
               </a>
             </Link>
             <p className='text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4'>
-              © 2022 —
+              © 2022 — Website created using Next.js
               <a
                 href='https://github.com/JuhwanLeeKR'
                 rel='noopener noreferrer'
@@ -42,7 +42,7 @@ export default function Footer() {
               </a>
               <a
                 className='text-gray-500'
-                href='https://github.com/JuhwanLeeKR'
+                href='https://github.com/JuhwanLeeKR/portfolio-nextjs'
                 rel='noopener noreferrer'
                 target='_blank'
               >
