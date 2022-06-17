@@ -94,7 +94,7 @@ export default function ProjectItem({ data }: any) {
         <div className='flex flex-wrap items-start mt-2'>
           {techStacks.map((aTag: any) => (
             <h1
-              className='px-2 py-1 mr-2 mt-2 rounded-md bg--100 dark:bg-sky-900 w-30'
+              className='px-2 py-1 mr-2 mt-2 rounded-md bg--100 bg-sky-100 dark:bg-sky-900 w-30'
               key={aTag.id}
             >
               {aTag.name}

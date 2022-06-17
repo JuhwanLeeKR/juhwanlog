@@ -17,7 +17,7 @@ export default function Projects({ projects }: any) {
           />
           <link rel='icon' href='/favicon.ico' />
         </Head>
-        <h1 className='text-3xl font-semibold mt-10 sm:text-5xl'>
+        <h1 className='text-2xl font-semibold mt-10 sm:text-3xl md:text-5xl'>
           <span className='pl-4 text-blue-500'>{projects.results.length}</span>
           개의 프로젝트가 있습니다.
         </h1>
@@ -30,7 +30,7 @@ export default function Projects({ projects }: any) {
           🔗노션 페이지 바로가기
         </a>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 gap-6'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 gap-6 max-w-6xl'>
           {projects.results.map((aProject: any) => (
             <ProjectItem key={aProject.id} data={aProject} />
           ))}

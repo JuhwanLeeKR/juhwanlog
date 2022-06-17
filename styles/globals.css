@@ -11,12 +11,12 @@
 }
 
 .project-card {
-  @apply flex flex-col m-3 rounded-xl w-full cursor-default select-none
+  @apply flex flex-col rounded-xl w-full cursor-default select-none
           transition duration-300 transform border border-gray-300
           hover:scale-[1.02]
           hover:shadow-lg
           dark:border-gray-200/30
-          dark:hover:shadow-gray-400/10
+          dark:hover:shadow-gray-500/10
           hover:text-blue-600;
 }
 
@@ -26,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply text-slate-900 dark:text-white;
+  @apply text-slate-900 dark:text-white cursor-default;
 }
 
 footer {
