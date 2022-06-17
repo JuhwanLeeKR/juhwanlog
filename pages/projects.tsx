@@ -17,7 +17,7 @@ export default function Projects({ projects }: any) {
           />
           <link rel='icon' href='/favicon.ico' />
         </Head>
-        <h1 className='text-4xl font-semibold sm:text-5xl'>
+        <h1 className='text-3xl font-semibold mt-10 sm:text-5xl'>
           <span className='pl-4 text-blue-500'>{projects.results.length}</span>
           개의 프로젝트가 있습니다.
         </h1>
