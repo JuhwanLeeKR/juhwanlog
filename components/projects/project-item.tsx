@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function ProjectItem({ data }: any) {
   const title = data.properties.Name.title[0].plain_text;
-  const emojiTitle = data.icon.emoji;
+  const emojiTitle = data.icon?.emoji;
   const summary = data.properties.Summary.rich_text[0].plain_text;
   const githubLink = data.properties.Github.url;
   const youtubeLink = data.properties.Youtube.url;
@@ -53,7 +53,9 @@ export default function ProjectItem({ data }: any) {
         />
       </div>
       <div className='p-4 flex flex-col w-full'>
-        <h1 className='text-2xl font-bold'>{`${emojiTitle} ${title}`}</h1>
+        <h1 className='text-2xl font-bold'>{`${
+          emojiTitle ? emojiTitle : ''
+        } ${title}`}</h1>
         <h3 className='mt-2 text-xl'>{summary}</h3>
         {people !== '혼자' ? (
           <span className='text-sm mt-2 text-zinc-500'>팀: {people}</span>
@@ -62,12 +64,14 @@ export default function ProjectItem({ data }: any) {
         )}
 
         {role ? <p className='dark:text-zinc-300'>Role: {role}</p> : null}
-        <div className='bg-slate-100 text-sm mt-2 pt-1 pb-2 px-3 rounded-xl dark:bg-zinc-900'>
-          <p className=''>
-            ✨ 작업 부분 <br />
-            {implementation}
-          </p>
-        </div>
+        {implementation ? (
+          <div className='bg-slate-100 text-sm mt-2 pt-1 pb-2 px-3 rounded-xl dark:bg-zinc-900'>
+            <p className=''>
+              ✨ 작업 부분 <br />
+              {implementation}
+            </p>
+          </div>
+        ) : null}
         <div className='mt-2 flex flex-col'>
           {githubLink ? (
             <a href={githubLink} rel='noopener noreferrer' target='_blank'>
