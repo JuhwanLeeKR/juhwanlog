@@ -35,9 +35,9 @@ export default function AboutMe() {
             </h3>
             <p className='mt-4 mb-8 leading-relaxed text-left'>
               새로운 것에 거부감이 없고 끊임없이 탐구하는 제 장점은 급변하는
-              프론트엔드 기술 분야에서 빛을 발했습니다. 꾸준히 배우고 써본다는
-              것은 중요하다 생각하고, 더 나은 방법이 있지 않을까 항상
-              고민합니다.
+              프론트엔드 기술 분야에서 빛을 발했습니다. 꾸준히 배우고
+              사용해본다는 것은 중요하다 생각하고, 더 나은 방법이 있지 않을까
+              항상 고민합니다.
             </p>
             <h3 className='text-2xl font-bold text-left'>
               디자인과 출신 프론트엔드 개발자
