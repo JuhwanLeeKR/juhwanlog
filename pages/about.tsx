@@ -62,10 +62,18 @@ export default function AboutMe() {
           </div>
           <div className='flex justify-center gap-4'>
             <Link href='/skills'>
-              <a className='btn-project'>기술스택 보러가기</a>
+              <a className='btn-project'>
+                기술스택
+                <br className='inline-block md:hidden' />
+                보러가기
+              </a>
             </Link>
             <Link href='/projects'>
-              <a className='btn-project'>프로젝트 보러가기</a>
+              <a className='btn-project'>
+                프로젝트
+                <br className='inline-block md:hidden' />
+                보러가기
+              </a>
             </Link>
           </div>
         </div>
