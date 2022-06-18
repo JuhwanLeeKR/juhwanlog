@@ -75,18 +75,18 @@ export default function ProjectItem({ data }: any) {
         <div className='mt-2 flex flex-col'>
           {githubLink ? (
             <a href={githubLink} rel='noopener noreferrer' target='_blank'>
-              깃허브 바로가기
+              🔗 깃허브 바로가기
             </a>
           ) : null}
           {youtubeLink ? (
             <a href={youtubeLink} rel='noopener noreferrer' target='_blank'>
-              시연영상 보러가기
+              🔗 시연영상 보러가기
             </a>
           ) : null}
 
           {blogLink ? (
             <a href={blogLink} rel='noopener noreferrer' target='_blank'>
-              회고록 보러가기
+              🔗 회고록 보러가기
             </a>
           ) : null}
         </div>

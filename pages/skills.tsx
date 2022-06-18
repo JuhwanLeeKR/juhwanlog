@@ -44,8 +44,7 @@ export default function Skills() {
             <SkillDesc title='Redux'>
               상태관리로는 단방향으로 데이터가 흘러 버그를 예측하기 쉬운 Redux를
               이용합니다. Redux-toolkit을 사용하여 과도한 코드량을 줄이는걸
-              선호합니다. <br />
-              Recoil이나 zustand를 배울 계획이 있습니다.
+              선호합니다.
             </SkillDesc>
             <SkillDesc title='tailwindCSS'>
               클래스명 하나로 style이 지정 가능하고 유연한 tailwind 사용을
