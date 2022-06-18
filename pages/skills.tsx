@@ -31,7 +31,8 @@ export default function Skills() {
           </div>
           <div className='flex flex-wrap'>
             <SkillDesc title='React'>
-              생태계가 넓고, 다양한 라이브러리 사용한 React를 주로 사용합니다.
+              생태계가 넓고, 다양한 라이브러리를 사용할 수 있는 React를 주로
+              사용합니다.
               <br />
               디자인 패턴 및 최적화에 관심이 많습니다.
             </SkillDesc>
@@ -44,8 +45,7 @@ export default function Skills() {
             <SkillDesc title='Redux'>
               상태관리로는 단방향으로 데이터가 흘러 버그를 예측하기 쉬운 Redux를
               이용합니다. Redux-toolkit을 사용하여 과도한 코드량을 줄이는걸
-              선호합니다. <br />
-              Recoil이나 zustand를 배울 계획이 있습니다.
+              선호합니다.
             </SkillDesc>
             <SkillDesc title='tailwindCSS'>
               클래스명 하나로 style이 지정 가능하고 유연한 tailwind 사용을
@@ -95,7 +95,7 @@ export default function Skills() {
               협업 경험이 있고, Merge Conflict 처리에 익숙합니다.
             </SkillDesc>
             <SkillDesc title='Github Actions'>
-              Github Actions로 CI/CD를 구성하여 프론트 엔드 무중단 배포 경험이
+              Github Actions로 CI/CD를 구성하여 프론트 서버 무중단 배포 경험이
               있습니다.
             </SkillDesc>
             <SkillDesc title='AWS'>
@@ -109,7 +109,7 @@ export default function Skills() {
               Figma를 이용한 프로젝트 와이어 프레임 제작 경험이 있습니다.
             </SkillDesc>
             <SkillDesc title='Slack'>
-              슬랙을 이용한 소통 경험이 있습니다.
+              슬랙을 이용한 소통, 협업 경험이 있습니다.
             </SkillDesc>
             <SkillDesc title='Notion'>
               노션을 통한 문서 정리를 좋아하며, 노션 API를 사용하여 Database를
