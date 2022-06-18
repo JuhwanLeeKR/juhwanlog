@@ -43,11 +43,11 @@ export default function ProjectItem({ data }: any) {
         <Image
           className='rounded-t-xl'
           src={imgSrc}
-          width='100%'
-          height='60%'
+          width={100}
+          height={60}
           layout='responsive'
           objectFit='cover'
-          quality={100}
+          quality={90}
           alt={title}
           priority={true}
         />
