@@ -26,7 +26,7 @@ export default function Header() {
               <a className='hover:text-gray-900'>Skills</a>
             </Link>
             <Link href={'/projects'}>
-              <a className='hover:text-gray-900'>Projects</a>
+              <a className='hover:text-gray-900  md:mr-5'>Projects</a>
             </Link>
           </nav>
           <DarkModeToggleBtn />
