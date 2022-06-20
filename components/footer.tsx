@@ -11,7 +11,7 @@ export default function Footer() {
                 <span className='ml-3 text-xl'>이주환 포트폴리오</span>
               </a>
             </Link>
-            <p className='text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4'>
+            <p className='text-sm text-center text-gray-500 sm:ml-6 sm:mt-0 mt-4'>
               © 2022 — Website created using Next.js
               <a
                 href='https://github.com/JuhwanLeeKR'
@@ -22,7 +22,7 @@ export default function Footer() {
                 @JuhwanLeeKR
               </a>
             </p>
-            <span className='inline-flex sm:ml-auto sm:mt-0 mt-4 items-center justify-center sm:justify-start gap-2'>
+            <span className='inline-flex sm:ml-auto sm:mt-0 mt-4 items-center justify-center sm:justify-start gap-2 lg:gap-3'>
               <a
                 className='text-gray-500'
                 href='https://open.kakao.com/o/sHwUNMle'
