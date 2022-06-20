@@ -4,7 +4,7 @@ import profile from '../public/leejuhwan.jpg';
 import Head from 'next/head';
 import Link from 'next/link';
 
-export default function AboutMe() {
+const AboutMe = () => {
   return (
     <Layout>
       <Head>
@@ -80,4 +80,6 @@ export default function AboutMe() {
       </section>
     </Layout>
   );
-}
+};
+
+export default AboutMe;

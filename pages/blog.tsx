@@ -1,6 +1,6 @@
 import Layout from '../components/layout';
 
-export default function Blog() {
+const Blog = () => {
   return (
     <>
       <Layout>
@@ -8,4 +8,6 @@ export default function Blog() {
       </Layout>
     </>
   );
-}
+};
+
+export default Blog;

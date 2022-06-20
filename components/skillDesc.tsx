@@ -6,7 +6,7 @@ interface SkillDescProp {
   title: string;
 }
 
-export default function SkillDesc(props: SkillDescProp) {
+const SkillDesc = (props: SkillDescProp) => {
   const { theme } = useTheme();
 
   return (
@@ -19,4 +19,6 @@ export default function SkillDesc(props: SkillDescProp) {
       </div>
     </>
   );
-}
+};
+
+export default SkillDesc;

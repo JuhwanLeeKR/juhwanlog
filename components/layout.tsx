@@ -5,7 +5,7 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-export default function Layout({ children }: LayoutProps) {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <div className='bg-primary'>
       <Header />
@@ -13,4 +13,6 @@ export default function Layout({ children }: LayoutProps) {
       <Footer />
     </div>
   );
-}
+};
+
+export default Layout;

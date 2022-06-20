@@ -4,7 +4,7 @@ import DarkModeToggleBtn from './darkModeToggleBtn';
 import LogoJuhwan from './assets/logoJuhwan';
 import LogoPortfolio from './assets/logoPortfolio';
 
-export default function Header() {
+const Header = () => {
   return (
     <>
       <header className='text-gray-600 body-font'>
@@ -37,4 +37,6 @@ export default function Header() {
       </header>
     </>
   );
-}
+};
+
+export default Header;

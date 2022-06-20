@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function ProjectItem({ data }: any) {
+const ProjectItem = ({ data }: any) => {
   const title = data.properties.Name.title[0].plain_text;
   const emojiTitle = data.icon?.emoji;
   const summary = data.properties.Summary.rich_text[0].plain_text;
@@ -36,7 +36,6 @@ export default function ProjectItem({ data }: any) {
 
     return result + 1;
   };
-
   return (
     <div className='project-card'>
       <div>
@@ -108,4 +107,6 @@ export default function ProjectItem({ data }: any) {
       </div>
     </div>
   );
-}
+};
+
+export default ProjectItem;

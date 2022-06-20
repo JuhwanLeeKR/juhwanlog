@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { TOKEN, DATABASE_ID } from '../config';
 import ProjectItem from '../components/projects/project-item';
 
-export default function Projects({ projects }: any) {
+const Projects = ({ projects }: any) => {
   //console.log(projects);
 
   return (
@@ -38,7 +38,9 @@ export default function Projects({ projects }: any) {
       </div>
     </Layout>
   );
-}
+};
+
+export default Projects;
 
 // 빌드 타임에 호출한다
 export async function getStaticProps() {

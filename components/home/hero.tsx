@@ -1,7 +1,7 @@
 import Animation from './animation';
 import Link from 'next/link';
 
-export default function Hero() {
+const Hero = () => {
   return (
     <>
       <div className='lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center'>
@@ -33,4 +33,6 @@ export default function Hero() {
       </div>
     </>
   );
-}
+};
+
+export default Hero;

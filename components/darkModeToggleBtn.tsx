@@ -1,6 +1,6 @@
 import { useTheme } from 'next-themes';
 
-export default function DarkModeToggleBtn() {
+const DarkModeToggleBtn = () => {
   const { theme, setTheme } = useTheme();
 
   const handleToChangeMode = () => {
@@ -39,4 +39,6 @@ export default function DarkModeToggleBtn() {
       </button>
     </>
   );
-}
+};
+
+export default DarkModeToggleBtn;

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Footer() {
+const Footer = () => {
   return (
     <>
       <footer className='body-font'>
@@ -109,4 +109,6 @@ export default function Footer() {
       </footer>
     </>
   );
-}
+};
+
+export default Footer;
