@@ -26,11 +26,11 @@ const Header = () => {
               <a className='hover:text-gray-900'>Skills</a>
             </Link>
             <Link href={'/projects'}>
-              <a className='hover:text-gray-900 '>Projects</a>
+              <a className='hover:text-gray-900 md:mr-6'>Projects</a>
             </Link>
-            <Link href={'/blog'}>
-              <a className='hover:text-gray-900 md:mr-6'>BLOG</a>
-            </Link>
+            {/* <Link href={'/blog'}>
+              <a className='hover:text-gray-900'>BLOG</a>
+            </Link> */}
           </nav>
           <DarkModeToggleBtn />
         </div>
