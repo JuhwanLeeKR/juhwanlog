@@ -4,7 +4,7 @@ import DarkModeToggleBtn from './darkModeToggleBtn';
 import LogoJuhwan from './assets/logoJuhwan';
 import LogoPortfolio from './assets/logoPortfolio';
 
-export default function Header() {
+const Header = () => {
   return (
     <>
       <header className='text-gray-600 body-font'>
@@ -15,7 +15,7 @@ export default function Header() {
               <LogoPortfolio />
             </a>
           </Link>
-          <nav className='md:ml-auto flex flex-wrap items-center text-base justify-center gap-5'>
+          <nav className='md:ml-auto flex flex-wrap items-center mt-5 md:mt-0 text-base justify-center gap-x-5 gap-y-3'>
             <Link href={'/'}>
               <a className='hover:text-gray-900'>HOME</a>
             </Link>
@@ -26,12 +26,17 @@ export default function Header() {
               <a className='hover:text-gray-900'>Skills</a>
             </Link>
             <Link href={'/projects'}>
-              <a className='hover:text-gray-900  md:mr-5'>Projects</a>
+              <a className='hover:text-gray-900 md:mr-6'>Projects</a>
             </Link>
+            {/* <Link href={'/blog'}>
+              <a className='hover:text-gray-900'>BLOG</a>
+            </Link> */}
           </nav>
           <DarkModeToggleBtn />
         </div>
       </header>
     </>
   );
-}
+};
+
+export default Header;

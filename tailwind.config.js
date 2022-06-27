@@ -7,7 +7,12 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        imgNotLoaded:
+          "url('https://velog.velcdn.com/images/leejuhwan/post/c6ba33a7-5b87-4049-9cc9-129a332c4aa5/image.png')",
+      },
+    },
   },
 
   plugins: [],

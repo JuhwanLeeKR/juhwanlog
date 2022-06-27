@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import SkillDesc from '../components/skillDesc';
 
-export default function Skills() {
+const Skills = () => {
   return (
     <Layout>
       <Head>
@@ -125,4 +125,6 @@ export default function Skills() {
       </div>
     </Layout>
   );
-}
+};
+
+export default Skills;
