@@ -1,7 +1,7 @@
 # Portfolio
 #### 포트폴리오 사이트 (Next.js + TS + tailwindCSS)
 
-🧑‍💻 [포트폴리오 사이트 바로가기](https://juhwan.shop)
+🧑‍💻 [포트폴리오 사이트 바로가기](https://portfolio-nextjs-8i3z0tl4a-juhwanleekr.vercel.app/)
 
 ## ✨ 핵심기능
 `반응형 구현` <br/>
