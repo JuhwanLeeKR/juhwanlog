@@ -8,28 +8,28 @@ const Header = () => {
   return (
     <>
       <header className='text-gray-600 body-font'>
-        <div className='container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center'>
+        <div className='container flex flex-col flex-wrap items-center p-5 mx-auto md:flex-row'>
           <Link href={'/'}>
-            <a className='w-60 flex gap-2'>
+            <div className='flex gap-2 w-60'>
               <LogoJuhwan />
               <LogoPortfolio />
-            </a>
+            </div>
           </Link>
-          <nav className='md:ml-auto flex flex-wrap items-center mt-5 md:mt-0 text-base justify-center gap-x-5 gap-y-3'>
+          <nav className='flex flex-wrap items-center justify-center mt-5 text-base md:ml-auto md:mt-0 gap-x-5 gap-y-3'>
             <Link href={'/'}>
-              <a className='hover:text-gray-900'>HOME</a>
+              <div className='hover:text-gray-900'>HOME</div>
             </Link>
             <Link href={'/about'}>
-              <a className='hover:text-gray-900'>About Me</a>
+              <div className='hover:text-gray-900'>About Me</div>
             </Link>
             <Link href={'/skills'}>
-              <a className='hover:text-gray-900'>Skills</a>
+              <div className='hover:text-gray-900'>Skills</div>
             </Link>
             <Link href={'/projects'}>
-              <a className='hover:text-gray-900 md:mr-6'>Projects</a>
+              <div className='hover:text-gray-900 md:mr-6'>Projects</div>
             </Link>
             {/* <Link href={'/blog'}>
-              <a className='hover:text-gray-900'>BLOG</a>
+              <div className='hover:text-gray-900'>BLOG</div>
             </Link> */}
           </nav>
           <DarkModeToggleBtn />

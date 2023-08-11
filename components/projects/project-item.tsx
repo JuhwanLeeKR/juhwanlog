@@ -38,40 +38,40 @@ const ProjectItem = ({ data }: any) => {
   };
   return (
     <div className='project-card'>
-      <div className='bg-imgNotLoaded bg-cover rounded-t-xl'>
+      <div className='bg-cover bg-imgNotLoaded rounded-t-xl'>
         <Image
           className='rounded-t-xl'
           src={imgSrc}
-          width='100%'
-          height='60%'
           layout='responsive'
+          width={300}
+          height={200}
           objectFit='cover'
           quality={100}
           alt={title}
           priority={true}
         />
       </div>
-      <div className='p-4 flex flex-col w-full'>
+      <div className='flex flex-col w-full p-4'>
         <h1 className='text-2xl font-bold'>{`${
           emojiTitle ? emojiTitle : ''
         } ${title}`}</h1>
         <h3 className='mt-2 text-xl'>{summary}</h3>
         {people !== '혼자' ? (
-          <span className='text-sm mt-2 text-zinc-500'>팀: {people}</span>
+          <span className='mt-2 text-sm text-zinc-500'>팀: {people}</span>
         ) : (
-          <span className='text-sm mt-2 text-zinc-500'>1인 프로젝트</span>
+          <span className='mt-2 text-sm text-zinc-500'>1인 프로젝트</span>
         )}
 
         {role ? <p className='dark:text-zinc-300'>Role: {role}</p> : null}
         {implementation ? (
-          <div className='bg-slate-100 text-sm mt-2 pt-1 pb-2 px-3 rounded-xl dark:bg-zinc-900'>
+          <div className='px-3 pt-1 pb-2 mt-2 text-sm bg-slate-100 rounded-xl dark:bg-zinc-900'>
             <p className=''>
               ✨ 작업 부분 <br />
               {implementation}
             </p>
           </div>
         ) : null}
-        <div className='mt-2 flex flex-col'>
+        <div className='flex flex-col mt-2'>
           {githubLink ? (
             <a href={githubLink} rel='noopener noreferrer' target='_blank'>
               🔗 깃허브 바로가기
@@ -97,7 +97,7 @@ const ProjectItem = ({ data }: any) => {
         <div className='flex flex-wrap items-start mt-2'>
           {techStacks.map((aTag: any) => (
             <h1
-              className='px-2 py-1 mr-2 mt-2 rounded-md bg--100 bg-sky-100 dark:bg-sky-900 w-30'
+              className='px-2 py-1 mt-2 mr-2 rounded-md bg--100 bg-sky-100 dark:bg-sky-900 w-30'
               key={aTag.id}
             >
               {aTag.name}

@@ -16,13 +16,13 @@ const AboutMe = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <section className='text-gray-600 body-font'>
-        <div className='container mx-auto flex px-5 py-24 items-center justify-center flex-col'>
-          {/* <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"> */}
-          <div className='lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded'>
+        <div className='container flex flex-col items-center justify-center px-5 py-24 mx-auto'>
+          {/* <img className="object-cover object-center w-5/6 mb-10 rounded lg:w-2/6 md:w-3/6" alt="hero" src="https://dummyimage.com/720x600"> */}
+          <div className='object-cover object-center w-5/6 mb-10 rounded lg:w-2/6 md:w-3/6'>
             <Image src={profile} alt='이주환' layout='responsive' />
           </div>
-          <div className='text-center lg:w-2/3 w-full'>
-            <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900'>
+          <div className='w-full text-center lg:w-2/3'>
+            <h1 className='mb-4 text-3xl font-medium text-gray-900 title-font sm:text-4xl'>
               안녕하세요 개발자 이주환입니다
             </h1>
             <p className='mb-20 leading-relaxed'>
@@ -62,18 +62,18 @@ const AboutMe = () => {
           </div>
           <div className='flex justify-center gap-4'>
             <Link href='/skills'>
-              <a className='btn-project'>
+              <div className='btn-project'>
                 기술스택
                 <br className='inline-block md:hidden' />
                 보러가기
-              </a>
+              </div>
             </Link>
             <Link href='/projects'>
-              <a className='btn-project'>
+              <div className='btn-project'>
                 프로젝트
                 <br className='inline-block md:hidden' />
                 보러가기
-              </a>
+              </div>
             </Link>
           </div>
         </div>

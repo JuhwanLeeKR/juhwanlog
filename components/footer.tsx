@@ -5,24 +5,24 @@ const Footer = () => {
     <>
       <footer className='body-font'>
         <div>
-          <div className='container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col'>
+          <div className='container flex flex-col items-center px-5 py-6 mx-auto sm:flex-row'>
             <Link href={'/'}>
-              <a className='flex title-font font-medium items-center md:justify-start justify-center text-gray-900'>
+              <div className='flex items-center justify-center font-medium text-gray-900 title-font md:justify-start'>
                 <span className='ml-3 text-xl'>이주환 포트폴리오</span>
-              </a>
+              </div>
             </Link>
-            <p className='text-sm text-center text-gray-500 sm:ml-6 sm:mt-0 mt-4'>
+            <p className='mt-4 text-sm text-center text-gray-500 sm:ml-6 sm:mt-0'>
               © 2022 — Website created using Next.js
               <a
                 href='https://github.com/JuhwanLeeKR'
                 rel='noopener noreferrer'
                 target='_blank'
-                className='text-gray-600 ml-1'
+                className='ml-1 text-gray-600'
               >
                 @JuhwanLeeKR
               </a>
             </p>
-            <span className='inline-flex sm:ml-auto sm:mt-0 mt-4 items-center justify-center sm:justify-start gap-2 lg:gap-3'>
+            <span className='inline-flex items-center justify-center gap-2 mt-4 sm:ml-auto sm:mt-0 sm:justify-start lg:gap-3'>
               <a
                 className='text-gray-500'
                 href='https://open.kakao.com/o/sHwUNMle'

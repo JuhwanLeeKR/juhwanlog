@@ -16,15 +16,15 @@ const Skills = () => {
       </Head>
       <section className='text-gray-600 body-font'>
         <div className='container px-5 pb-24 mx-auto'>
-          <div className='flex flex-col text-center w-full my-20'>
-            <h2 className='text-xs text-blue-500 tracking-widest font-medium title-font mb-1'>
+          <div className='flex flex-col w-full my-20 text-center'>
+            <h2 className='mb-1 text-xs font-medium tracking-widest text-blue-500 title-font'>
               TechStack
             </h2>
             {/* FrontEnd */}
-            <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900'>
+            <h1 className='mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font'>
               FrontEnd
             </h1>
-            <p className='lg:w-2/3 mx-auto leading-relaxed text-base'>
+            <p className='mx-auto text-base leading-relaxed lg:w-2/3'>
               주로 React를 사용하여 앱을 만듭니다. 유저 경험과 디자인에 민감하며
               유지보수성이 높은 코드를 작성하기 위해 노력합니다.
             </p>
@@ -56,11 +56,11 @@ const Skills = () => {
             </SkillDesc>
           </div>
           {/* backend */}
-          <div className='flex flex-col text-center w-full my-20'>
-            <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900'>
+          <div className='flex flex-col w-full my-20 text-center'>
+            <h1 className='mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font'>
               BackEnd
             </h1>
-            <p className='lg:w-2/3 mx-auto leading-relaxed text-base'>
+            <p className='mx-auto text-base leading-relaxed lg:w-2/3'>
               간단한 웹 서버 구축 및 서버리스 서비스 경험이 있습니다.
             </p>
           </div>
@@ -77,11 +77,11 @@ const Skills = () => {
             </SkillDesc>
           </div>
           {/* etc */}
-          <div className='flex flex-col text-center w-full my-20'>
-            <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900'>
+          <div className='flex flex-col w-full my-20 text-center'>
+            <h1 className='mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font'>
               .etc
             </h1>
-            <p className='lg:w-2/3 mx-auto leading-relaxed text-base'>
+            <p className='mx-auto text-base leading-relaxed lg:w-2/3'>
               코드 컨벤션(eslint, prettier) 및 커밋 컨벤션을 통한 협업, 타
               포지션(백엔드, 디자이너)과의 협업 경험이 있습니다.
               <br />
@@ -120,7 +120,7 @@ const Skills = () => {
       </section>
       <div className='flex justify-center mb-20'>
         <Link href='/projects'>
-          <a className='btn-project'>프로젝트 보러가기</a>
+          <div className='btn-project'>프로젝트 보러가기</div>
         </Link>
       </div>
     </Layout>
