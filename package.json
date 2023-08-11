@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-nextjs",
+  "name": "juhwanlog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,22 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "dotenv": "^16.0.1",
-    "next": "12.1.6",
-    "next-themes": "^0.2.0",
+    "next": "13.4.13",
+    "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-lottie-player": "^1.4.3"
+    "react-lottie-player": "^1.5.4"
   },
   "devDependencies": {
-    "@types/node": "17.0.44",
-    "@types/react": "18.0.12",
-    "@types/react-dom": "18.0.5",
-    "autoprefixer": "^10.4.7",
-    "eslint": "8.17.0",
-    "eslint-config-next": "12.1.6",
-    "postcss": "^8.4.14",
-    "tailwindcss": "^3.1.3",
-    "typescript": "4.7.3"
+    "@types/node": "20.4.10",
+    "@types/react": "18.2.20",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "^10.4.14",
+    "eslint": "8.47.0",
+    "eslint-config-next": "13.4.13",
+    "postcss": "^8.4.27",
+    "tailwindcss": "^3.3.3",
+    "typescript": "5.1.6"
   }
 }
